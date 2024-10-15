@@ -1,0 +1,152 @@
+* {
+    padding: 10;
+    margin: 0px 120px 10px 60px;
+    box-sizing: border-box;
+  
+}
+
+h1 {
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #715b9b !important;
+    text-align: center;
+}
+
+h2 {
+    /* Formato de texto */
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    color: #c50ea7 !important;
+
+}
+
+
+body {
+    background: rgb(175, 183, 238);
+    background: linear-gradient(180deg, rgba(175, 183, 238, 1) 0%, rgba(206, 175, 238, 1) 42%, rgba(255, 255, 255, 1) 74%, rgba(238, 175, 238, 1) 95%);
+
+}
+
+/* crear gread para el tamaño de la tarjeta */
+main {
+    display: grid;
+    /* numero de columnas */
+    grid-template-columns: 2fr 2fr 2fr;
+    /* Espacio entre tarjetas */
+    gap: 20px;
+}
+
+/* Tarjeta */
+.card {
+    /* ancho de la tarjet */
+    width: 100%;
+    /* borde */
+    border: 2 px solid rgb(36, 3, 37);
+    border-radius: 15%;
+    /* Sombra  x y  blurd o que tan expandido color */
+    box-shadow: 3px 3px rgb(36, 3, 37);
+    /* color de la tarjeta*/
+    background: rgb(107, 0, 110);
+    background: linear-gradient(0deg, rgba(107, 0, 110, 1) 0%, rgba(117, 0, 140, 1) 43%, rgba(208, 188, 212, 1) 100%);
+    /* tiempo reaccion de crecimiento cuando se coloca el cursor sobre la imagen */
+    transition: all 0.25s;
+}
+.card:hover{
+    /* cuando colocas el cursos sobre la imagen crece  */
+    transform: scale(1.10);
+}
+
+.card>img {
+    /* la imagen dentro de card tiene un ancho de  */
+    width: 80%;
+    border-radius: 50%;
+}
+
+img {
+    /* margen */
+    margin: 20px 20px;
+    /* para centrar imagen */
+    object-fit: fill, contain, cover, none, scale-down;
+    height: auto;
+    border: 1px solid rgb(76, 55, 80);
+    
+}
+
+.card>h3 {
+    color: #a498a7;
+    text-align: center;
+    /* Formato Letra */
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-optical-sizing: auto;
+    
+      
+}
+.card>p#email {
+    color: #a498a7 !important ;
+    text-align: center;
+    /* Formato Letra */
+    font-family: "Akaya Kanadaka", system-ui !important ;
+    font-weight: 400 !important ;
+    font-style: normal;
+    font-optical-sizing: auto;
+      
+}
+
+.card>p#id{
+    color: #a498a7;
+    text-align: center;
+    /* Formato Letra */
+    font-family: "Sarpanch", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-optical-sizing: auto;
+    
+}
+
+
+
+/* Responsivo */
+/* Typical Device Breakpoints  https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main {
+        /* numero de columnas */
+        grid-template-columns: 2fr 2fr ;
+   }
+
+   
+}
+
+
+/* Paginación en pie de página */
+.pages{
+     padding: 30px;
+     text-align: center;
+     justify-content:center;
+     display: flex; 
+     /* align-content: center; */
+     /* tiempo reaccion de crecimiento cuando se coloca el cursor sobre nav */
+     transition: all 0.25s;
+}
+
+.page-item:hover{
+    /* cuando colocas el cursos sobre nav crece  */
+    transform: scale(1.5);
+
+}
+
+a{
+    color:rgb(107, 0, 110) !important ;
+    background-color: rgb(247, 172, 230);
+        
+}
+
+
+.placeholder-card {
+    opacity: 0.5; /* Efecto de transparencia para placeholders */
+}
