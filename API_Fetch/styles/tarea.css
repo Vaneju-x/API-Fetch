@@ -2,8 +2,7 @@
     padding: 10;
     margin: 0px 120px 10px 60px;
     box-sizing: border-box;
-  
-}
+    }
 
 h1 {
     font-family: "Rozha One", serif;
@@ -25,9 +24,7 @@ h2 {
 
 
 body {
-    background: rgb(175, 183, 238);
     background: linear-gradient(180deg, rgba(175, 183, 238, 1) 0%, rgba(206, 175, 238, 1) 42%, rgba(255, 255, 255, 1) 74%, rgba(238, 175, 238, 1) 95%);
-
 }
 
 /* crear gread para el tamaño de la tarjeta */
@@ -49,8 +46,7 @@ main {
     /* Sombra  x y  blurd o que tan expandido color */
     box-shadow: 3px 3px rgb(36, 3, 37);
     /* color de la tarjeta*/
-    background: rgb(107, 0, 110);
-    background: linear-gradient(0deg, rgba(107, 0, 110, 1) 0%, rgba(117, 0, 140, 1) 43%, rgba(208, 188, 212, 1) 100%);
+   background: linear-gradient(0deg, rgba(107, 0, 110, 1) 0%, rgba(117, 0, 140, 1) 43%, rgba(208, 188, 212, 1) 100%);
     /* tiempo reaccion de crecimiento cuando se coloca el cursor sobre la imagen */
     transition: all 0.25s;
 }
@@ -110,6 +106,37 @@ img {
 
 
 
+
+/* Paginación en pie de página */
+ .page{
+    /* tiempo reaccion de crecimiento cuando se coloca el cursor sobre nav */
+    transition: all 0.25s;
+} 
+
+.page-item:hover{
+    padding: 35px !important;
+    /* cuando colocas el cursos sobre nav crece  */
+    transform: scale(2);
+}
+
+a{
+    color:rgb(107, 0, 110) !important ;
+    background-color: rgb(247, 172, 230);     
+}
+
+
+.placeholder-card {
+    opacity: 0.5; /* Efecto de transparencia para placeholders */
+}
+
+footer.page.page-item{
+    text-align: center;
+    justify-content:center;
+    display: flex;
+    align-content: center; 
+}
+
+
 /* Responsivo */
 /* Typical Device Breakpoints  https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 /* Extra small devices (phones, 600px and down) */
@@ -118,35 +145,5 @@ img {
         /* numero de columnas */
         grid-template-columns: 2fr 2fr ;
    }
-
    
-}
-
-
-/* Paginación en pie de página */
-.pages{
-     padding: 30px;
-     text-align: center;
-     justify-content:center;
-     display: flex; 
-     /* align-content: center; */
-     /* tiempo reaccion de crecimiento cuando se coloca el cursor sobre nav */
-     transition: all 0.25s;
-}
-
-.page-item:hover{
-    /* cuando colocas el cursos sobre nav crece  */
-    transform: scale(1.5);
-
-}
-
-a{
-    color:rgb(107, 0, 110) !important ;
-    background-color: rgb(247, 172, 230);
-        
-}
-
-
-.placeholder-card {
-    opacity: 0.5; /* Efecto de transparencia para placeholders */
 }

@@ -5,10 +5,12 @@ function mostrarPlaceholders() {
     const placeholders = [];
     for (let i = 0; i < 6; i++) {
         placeholders.push(`
-        <div class="card m-3 col-sm-5 col-md-4 placeholder-card">
+        <div class="card m-3 col-sm-5 col-md-3 placeholder-card">
             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder">
                 <div class="card-body">
                         <p class="card-text placeholder-glow">
+                        <span class="placeholder4"></span>
+                        <span class="placeholder4"></span>
                         <span class="placeholder4"></span>
                     </p>
                 </div>
@@ -22,7 +24,7 @@ function mostrarPlaceholders() {
     // Ocultar automáticamente después de unos segundos (en caso de que no llegue la API aún)
     setTimeout(() => {
         placeholderContainer.innerHTML = "";
-    }, 5000); // 5 segundos
+    }, 3000); // 3 segundos
 }
 
 /* FUNCION PARA OBTENER DATOS */
